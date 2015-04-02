@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/lib/publisher.js"></script>
+    <script src="js/webchallenge/event/Dispatcher.js"></script>
+    <script src="js/webchallenge/event/QuizEvent.js"></script>
+    <script src="js/webchallenge/data/QuizData.js"></script>
+    <script src="js/webchallenge/view/QuizQuestionView.js"></script>
+    <script src="js/webchallenge/view/QuizResultView.js"></script>
+    <script src="js/webchallenge/controller/ResultKeeperController.js"></script>
+    <script src="js/webchallenge/controller/QuizController.js"></script>
+    <script src="js/webchallenge/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="info">
+            <p>Quiz helper</p>
+            <p>What to do in the evening</p>
+        </div>
+        <div id="quiz" class="quiz">
+            <div class="quiz-info">
+                <p class="quiz-title">Question</p>
+                <p class="quiz-question">Question Info</p>
+            </div>
+            <div class="quiz-answers">
+                <button type="button" class="quiz-button">Yes</button>
+                <button type="button" class="quiz-button">No</button>
+            </div>
+        </div>
+        <div id="result" class="result">
+            <p class="result-title">Our advise to you</p>
+            <p class="result-info">Advise info</p>
+            <p class="result-wishes">Good look !</p>
+        </div>
+    </div>
+</body>
+</html>
