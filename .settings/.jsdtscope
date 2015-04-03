@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lib/|slider/" kind="src" path="slider/js"/>
+	<classpathentry kind="src" path="slider/js/lib"/>
+	<classpathentry kind="src" path="slider/js/slider"/>
+	<classpathentry kind="src" path="webchallengequiz/js/lib"/>
+	<classpathentry excluding="view/|data/|controller/|event/" kind="src" path="webchallengequiz/js/webchallenge"/>
+	<classpathentry kind="src" path="webchallengequiz/js/webchallenge/controller"/>
+	<classpathentry kind="src" path="webchallengequiz/js/webchallenge/data"/>
+	<classpathentry kind="src" path="webchallengequiz/js/webchallenge/event"/>
+	<classpathentry kind="src" path="webchallengequiz/js/webchallenge/view"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

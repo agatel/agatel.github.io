@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:700);
+
+html{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 22px;
+	background: url('../img/background-tile.png') repeat;
+}
+body{
+	background: url('../img/content-tile.jpg') repeat;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+.repo-info{
+	text-align: center;
+	margin: 0 auto;
+	color: #004600;
+}
+.repo-info img:hover{
+	opacity: 0.75;
+}
+.links{
+	margin: 50px;
+	padding: 50px;
+	border: dashed;
+	border-color: #636660;
+}
+.links a{
+	color: #7c4a24;
+	line-height: 35px;
+}
+.links a:hover{
+	opacity: 0.75;
+}
+
