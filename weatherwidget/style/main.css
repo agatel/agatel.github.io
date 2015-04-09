@@ -1,0 +1,40 @@
+#weather{
+    background-color: #ffee15;
+    border-radius: 30px;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border: double 3px chocolate;
+}
+#weather .info{
+    padding: 5px;
+    font-size: 22px;
+}
+#weather .text{
+    color: gray;
+    width: 200px;
+    font-size: 20px;
+}
+#weather .property{
+    color: #554689;
+    font-style: italic;
+    font-size: 16px;
+    width: 100px;
+    float: left;
+    padding-left: 50px;
+    text-align: left;
+}
+#weather .value{
+    color: #ce0d14;
+    font-size: 18px;
+    float: left;
+    padding-left: 10px;
+}
+#weather .button{
+    color: red;
+    padding: 8px;
+    font-size: 15px;
+    margin-left: 5px;
+    border-radius: 15px;
+}
