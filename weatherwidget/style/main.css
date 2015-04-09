@@ -1,22 +1,25 @@
-#weather{
+body{
+    text-align: center;
+}
+.weather-widget{
     background-color: #ffee15;
     border-radius: 30px;
     text-align: center;
     width: 350px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 10px;
     border: double 3px chocolate;
 }
-#weather .info{
+.weather-widget .info{
     padding: 5px;
     font-size: 22px;
 }
-#weather .text{
+.weather-widget .text{
     color: gray;
     width: 200px;
     font-size: 20px;
 }
-#weather .property{
+.weather-widget .property{
     color: #554689;
     font-style: italic;
     font-size: 16px;
@@ -25,13 +28,13 @@
     padding-left: 50px;
     text-align: left;
 }
-#weather .value{
+.weather-widget .value{
     color: #ce0d14;
     font-size: 18px;
     float: left;
     padding-left: 10px;
 }
-#weather .button{
+.weather-widget .button{
     color: red;
     padding: 8px;
     font-size: 15px;

@@ -1,4 +1,4 @@
-function WeatherWidget(id){
+function WeatherWidget(widgetSelector, useJqueryRequests){
     'use strict';
     var INFO_ID = '.info',
         INPUT_ID = '.text',
@@ -23,9 +23,11 @@ function WeatherWidget(id){
     }
 
     function init(){
-        widget = $(id);
+        useJqueryRequests = useJqueryRequests || false;
+        widget = $(widgetSelector);
         info = $(widget).find($(INFO_ID));
         input = $(widget).find($(INPUT_ID));
+        input.val('');
         button = $(widget).find($(BUTTON_ID));
     }
 
@@ -42,8 +44,18 @@ function WeatherWidget(id){
         var city = $(input).val();
         if(city) {
             var requestURL = REQUEST_TEMPLATE.replace(CITY_PLACE_HOLDER, city.toString());
+            sendWeatherInfoRequest(requestURL);
+        }
+    }
+
+    function sendWeatherInfoRequest(requestURL){
+        if(useJqueryRequests){
+            $.get(requestURL, function(data){
+                updateWeather(data);
+            });
+        }else{
             var request = new XMLHttpRequest();
-            request.onload = function () {
+            request.onload = function(){
                 if (this.statusText === OK_STATUS) {
                     updateWeather(this.responseText);
                 }
@@ -54,7 +66,7 @@ function WeatherWidget(id){
     }
 
     function updateWeather(data){
-        var weatherData = JSON.parse(data);
+        var weatherData = data instanceof Object ? data : JSON.parse(data);
         var weatherInfo = getWeatherInfo(weatherData);
         $(info).html(weatherInfo);
     }
@@ -62,7 +74,7 @@ function WeatherWidget(id){
     function getWeatherInfo(data){
         var info;
         if(data.cod === NOT_FOUND_CITY_CODE){
-            info = 'not found the city :(';
+            info = 'not found the city';
         }else{
             var main = data.main,
                 wind = data.wind,
