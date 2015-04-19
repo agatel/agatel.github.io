@@ -1,5 +1,6 @@
 function BoxAnimation(selection, movementRange, speedX, speedY){
     'use strict';
+    var UPDATE_INTERVAL = 40;
     var view,
         renderInterval,
         startX = 0,
@@ -24,7 +25,7 @@ function BoxAnimation(selection, movementRange, speedX, speedY){
     }
 
     function start(){
-        renderInterval = setInterval(render, 40);
+        renderInterval = setInterval(render, UPDATE_INTERVAL);
     }
 
     function render(){

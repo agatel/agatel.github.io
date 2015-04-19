@@ -6,7 +6,7 @@ body{
     border-radius: 30px;
     text-align: center;
     width: 350px;
-    margin: 50px auto;
+    margin: 30px auto 0;
     padding: 10px;
     border: double 3px chocolate;
 }
@@ -40,4 +40,12 @@ body{
     font-size: 15px;
     margin-left: 5px;
     border-radius: 15px;
+}
+.indent-top{
+    margin-top: 60px;
+}
+.code-link{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 25px;
 }

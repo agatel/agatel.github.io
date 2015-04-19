@@ -7,7 +7,9 @@ window.onload = function start(){
         boxAnimation = new BoxAnimation(BOX_ITEM_ID, MOVEMENT_RANGE, speedX, speedY);
 
     function getRandomSpeed(){
-        return Math.round(Math.random() * 8) + 2;
+        var MIN_SPEED = 2,
+            MAX_SPEED = 10;
+        return Math.round(Math.random() * (MAX_SPEED - MIN_SPEED)) + MIN_SPEED;
     }
 
     boxAnimation.start();
